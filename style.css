@@ -51,9 +51,11 @@
 
 #content {
     position: relative;
-    width: 1280px;
+    /* width: 1280px; */
     height: 150px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     /* border: 1px solid black; */
 }
 
@@ -244,6 +246,9 @@
 body {
     background-image: url("img/paper-brun.jpg");
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* corp du site ------------------------------------------------------------------------------------------*/
@@ -254,6 +259,10 @@ body {
     padding-top: 20px;
     margin-left: 7%;
     margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(212, 198, 185);
     border-radius: 20px;
     box-shadow: 0 0 40px white;
@@ -292,11 +301,12 @@ a {
 }
 
 #nav-bar {
+    top: 50px;
+    margin: auto;
     background-color: black;
-    height: auto;
+    height: fit-content;
     border-radius: 25px;
     width: fit-content;
-    margin-left: 250px;
 }
 
 
@@ -324,6 +334,8 @@ a {
 
 #nav-bar ul {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* mise en forma du footer -------------------------------------------------------------------------------*/
